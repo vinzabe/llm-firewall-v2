@@ -1,0 +1,22 @@
+tenant_id: permissive-tenant
+name: permissive
+block_threshold: 0.9
+warn_threshold: 0.6
+category_weights:
+  LLM01: 0.8
+  LLM02: 1.0
+  LLM05: 1.0
+  LLM07: 0.5
+  LLM10: 0.5
+enabled_detectors:
+  - heuristic_injection
+  - pii_scanner
+  - output_handler
+use_llm_judge: false
+llm_judge_threshold: 0.5
+adaptive: true
+allowlist:
+  - "(?i)^how\\s+(do|can)\\s+i\\b"
+denylist: []
+max_requests_per_min: 600
+max_tokens_per_min: 200000

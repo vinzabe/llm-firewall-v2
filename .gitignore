@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+.python-version
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Local data / runtime
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Reports / artifacts
+*.html.bak
+report.html
+report.json
+report.sarif
+bom.sig.json
+delta.json
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.yaml

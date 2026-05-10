@@ -1,0 +1,25 @@
+tenant_id: strict-tenant
+name: strict
+block_threshold: 0.5
+warn_threshold: 0.25
+category_weights:
+  LLM01: 1.2
+  LLM02: 1.5
+  LLM05: 1.2
+  LLM07: 1.0
+  LLM10: 0.8
+enabled_detectors:
+  - heuristic_injection
+  - pii_scanner
+  - output_handler
+  - consumption
+  - system_prompt_leak
+use_llm_judge: true
+llm_judge_threshold: 0.3
+adaptive: true
+learning_rate: 0.05
+allowlist: []
+denylist:
+  - "(?i)\\bnuclear\\s+launch\\b"
+max_requests_per_min: 60
+max_tokens_per_min: 30000
