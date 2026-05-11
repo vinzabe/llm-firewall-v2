@@ -62,3 +62,7 @@ LLM. We assume:
 - All Python deps are pinned via `requirements.txt`
 - Recommended: install with `pip install --require-hashes -r requirements.lock`
 - The shared `llm_client.py` is vendored (not a third-party package)
+
+## Contact
+
+Responsible disclosure: **g@abejar.net**
